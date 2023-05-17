@@ -1,0 +1,129 @@
+.nachat{
+    margin-top: 100px;
+}
+
+.nachat-main{
+    h1{
+        font-size: 32px;
+        line-height: 44px;
+        color: #303030;
+        text-align: center;
+    }
+}
+.nachat-cards{
+    margin-top: 48px;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 16px;
+    flex-wrap: wrap;
+}
+.nachat-left-card{
+    .register, .obuch{
+        padding: 32px;
+        box-shadow: 0px 4px 100px rgba(208, 218, 227, 0.57);
+        background-color: #fff;
+        border-radius: 20px;
+        width: 295px;
+        @media(max-width:360px){
+            width: auto;
+            padding: 20px;
+        }
+        .number{
+            width: 40px;
+            height: 40px;
+            border: 2px solid #404040;
+            border-radius: 50%;
+            display: grid;
+            place-items: center;
+            p{
+                font-size: 14px;
+                line-height: 30px;
+                color: #404040;
+            }
+        }
+        h2{
+            font-size: 16px;
+            line-height: 36px;
+            color: #404040;
+            margin-top: 16px;
+        }
+        &>p{
+            font-size: 14px;
+            line-height: 20px;
+            color: #404040;
+            margin-top: 16px;
+        }
+    }
+    .obuch{
+        margin-top: 16px;
+    }
+}
+
+.nachat-middle-card{
+    width: 315px;
+    padding: 58px 40px;
+    background-color: #fff;
+    border-radius: 20px;
+    @media(max-width:360px){
+        width: auto;
+        padding: 20px;
+    }
+    .number{
+        width: 40px;
+        height: 40px;
+        margin-top: 30px;
+        border: 2px solid #404040;
+        border-radius: 50%;
+        display: grid;
+        place-items: center;
+        p{
+            font-size: 14px;
+            line-height: 30px;
+            color: #404040;
+        } 
+    }
+    h2{
+        font-size: 16px;
+        line-height: 36px;
+        color: #404040;
+        margin-top: 16px;
+    }
+    &>p{
+        font-size: 14px;
+        line-height: 20px;
+        color: #404040;
+        margin-top: 16px;
+    }
+}
+
+
+.nachat-right-card{
+    padding: 40px;
+    background-color: #fff;
+    border-radius: 20px;
+    width: 315px;
+    @media(max-width:360px){
+        width: auto;
+        padding: 20px;
+    }
+    img{
+        width: 55px;
+    }
+    h2{
+        font-size: 16px;
+        line-height: 36px;
+        color: #404040;
+        margin-top: 16px;
+    }
+    &>p{
+        font-size: 14px;
+        line-height: 20px;
+        color: #404040;
+        margin-top: 16px;
+    }
+    button{
+        margin-top: 16px;
+        width: 100%;
+    }
+}

@@ -1,0 +1,341 @@
+@import "./variables.scss";
+
+.tarif{
+    margin-top: 120px;
+}
+.tariflar{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 32px;
+    @media(max-width:940px){
+        justify-content: center;
+    }
+}
+.tarif-main{
+    &>h1{
+        font-size: 32px;
+        line-height: 44px;
+        text-align: center;
+    }
+    &>p{
+        font-size: 14px;
+        line-height: 1.5;
+        color: #404040;
+        margin-top: 16px;
+        text-align: center;
+    }
+    .btns{
+        margin-top: 32px;
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        gap: 30px;
+        p{
+            font-size: 20px;
+            line-height: 30px;
+            padding: 10px 14px;
+            color: #273895;
+            border-bottom: 1px dashed #273895;
+            &:hover{
+                padding: 10px 28px;
+                border: none;
+                border-radius: 15px;
+                background-color: #273895;
+                color: #fff;
+            }
+        }
+    }
+    .start{
+        width: 100%;
+        padding: 48px 10px;
+        background-color: #fff;
+        border-radius: 20px;
+        margin-top: 40px;
+    }
+    .tarif-card-start{
+        &>h3{
+            font-size: 16px;
+            line-height: 30px;
+            font-weight: 700;
+            text-transform: uppercase;
+            color: #2741D0;
+            text-align: center;
+        }
+        &>h2{
+            font-size: 32px;
+            line-height: 44px;
+            color: #C9C9C9;
+            margin-top: 8px;
+            text-align: center;
+        }
+        &>p{
+            font-size: 14px;
+            line-height: 30px;
+            color: #737373;
+            text-align: center;
+            margin-top: 16px;
+        }
+        &>h4{
+            font-size: 16px;
+            line-height: 30px;
+            color: #404040;
+            margin-top: 16px;
+            text-align: center;
+        }
+    }
+    .tarif-cards{
+        display: flex;
+        justify-content: center;
+        gap: 40px;
+        margin-top: 16px;
+        @media(max-width:500px){
+            flex-direction: column;
+            gap: 0;
+        }
+        .tarif-card{
+            width: 310px;
+            @media(max-width:500px){
+                width: 100%;
+            }
+        }
+        .part{
+            display: flex;
+            gap: 10px;
+            margin-bottom: 16px;
+            img{
+                width: 8px;
+                height: 8px;
+                margin-top: 6px;
+            }
+            p{
+                font-size: 16px;
+                line-height: 20px;
+                color: #404040;
+            }
+        }
+    }
+    .direct{
+        display: flex;
+        gap: 12px;
+        align-items: center;
+        justify-content: center;
+        a{
+            font-size: 16px;
+            line-height: 40px;
+            color: #2741D0;
+            @media(max-width:400px){
+                font-size: 12px;
+                line-height: 24px;
+            }
+        }
+        i{
+            font-size: 20px;
+            color: #2741D0;
+
+        }
+    }
+    .start-btn{
+        text-align: center;
+        margin-top: 16px;
+    }
+    
+
+    .basic-card{
+        padding: 48px;
+        border-radius: 20px;
+        background-color: #fff;
+        width: 48.1%;
+        @media(max-width:940px){
+            width: 510px;
+            padding: 24px;
+        }
+        h1{
+            font-size: 16px;
+            line-height: 30px;
+            color: #2741D0;
+        }
+        &>p{
+            font-size: 14px;
+            line-height: 30px;
+            color: #737373;
+            margin-top: 16px;
+        }
+        h3{
+            font-size: 16px;
+            line-height: 30px;
+            color: #404040;
+            margin-top: 16px;
+        }
+        h2{
+            font-size: 16px;
+            line-height: 30px;
+            color: #404040;
+            margin-top: 16px;
+        }
+        .asosiy{
+            display: flex;
+            gap: 12px;
+            margin-top: 16px;
+            img{
+                width: 8px;
+                height: 8px;
+                margin-top: 8px;
+            }
+            p{
+                font-size: 16px;
+                line-height: 24px;
+                color: #404040;
+            }
+        }
+        .direct{
+            justify-content: start;
+            margin-top: 16px;
+        }
+        button{
+            margin-top: 16px;
+        }
+    }
+}
+
+
+.partner{
+    width: 100%;
+    height: 400px;
+    background-image: url('../images/image\ 30partner.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: right;
+    margin-top: 40px;
+    padding-top: 85px;
+    @media(max-width:600px){
+        height: 300px;
+    }
+    h1{
+        font-size: 32px;
+        line-height: 44px;
+        color: #fff;
+        @media(max-width:430px){
+            font-size: 24px;
+            line-height: 30px;
+            text-align: center;
+        }
+    }
+    p{
+        font-size: 16px;
+        line-height: 1.5;
+        color: #E9E9E9;
+        margin-top: 16px;
+        width: 320px;
+        @media(max-width:430px){
+            font-size: 12px;
+            text-align: center;
+            width: auto;
+        }
+    }    
+}
+
+.partner-cards{
+    margin-top: 76px;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+.partner-card{
+    width: 100%;
+    padding: 48px;
+    background-color: #fff;
+    border-radius: 20px;
+    display: flex;
+    gap: 64px;
+    align-items: center;
+    justify-content: center;
+    @media(max-width:770px){
+        flex-direction: column;
+        row-gap: 32px;
+    }
+    @media(max-width:400px){
+        padding: 24px;
+    }
+    .partner-img{
+        width: 220px;
+    }
+    .partner-info{
+        width: 515px;
+        @media(max-width:670px){
+            width: auto;
+        }
+        h2{
+            font-size: 16px;
+            line-height: 36px;
+            color: #404040;
+        }
+    }
+}
+.partner1{
+    .partner-info{
+        p{
+            font-size: 14px;
+            line-height: 20px;
+            &:nth-of-type(1){
+                color: #404040;
+            }
+            &:nth-of-type(2){
+                color: #B7B6B6;
+                margin-top: 16px;
+            }
+        }
+    }
+}
+.partner2{
+    .partner-info{
+        p{
+            font-size: 14px;
+            line-height: 20px;
+            color: #404040;
+            &:nth-of-type(2){
+                margin-top: 16px;
+            }
+        }
+    }
+}
+.partner3{
+    .partner-info{
+        p{
+            font-size: 14px;
+            line-height: 20px;
+            color: #404040;
+            &:nth-of-type(2){
+                margin-top: 16px;
+            }
+        }
+    }
+}
+.partner4{
+    .partner-info{
+        p{
+            font-size: 14px;
+            line-height: 20px;
+            color: #404040;
+            margin-top: 12px;
+        }
+        ul{
+            list-style-type: disc;
+            margin-top: 14px;
+            margin-left: 20px;
+        }
+        h3{
+            font-size: 16px;
+            line-height: 36px;
+            color: #404040;
+            margin-top: 12px;
+            @media(max-width:400px){
+                line-height: 24px;
+            }
+        }
+    }
+}
+.partner-btn{
+    text-align: center;
+    margin-top: 30px;
+}
